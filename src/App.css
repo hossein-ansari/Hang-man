@@ -7,7 +7,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: stretch;
-  height: 300px;
+  height: 250px;
 }
 .keyboard{
   display: flex;

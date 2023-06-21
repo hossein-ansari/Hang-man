@@ -1,0 +1,21 @@
+.CorrectBox{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+width: 100%;
+}
+.inputAnswer{
+    font-size: 2rem;
+    width: 50px;
+    height: 55px;
+    border: none;
+    background-color: #ffffff;
+    border-bottom: 5px solid black;
+    margin: 10px 5px;
+
+}
+.inputAnswer:focus {
+
+    outline:none;
+}

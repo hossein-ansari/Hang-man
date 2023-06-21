@@ -1,10 +1,18 @@
-import React from 'react'
-
+import React, { useContext, useMemo } from "react";
+import "./CorrectAnswer.css";
+import {ContexBox} from "../contex/Contex";
 export default function CorrectAnswer() {
-  return (
-    <div>
-      <input className={'inputAnswer'} type='text'></input>
+  const wordContex = useContext(ContexBox);
 
+  return (
+    <div className="CorrectBox">
+      {useMemo(() => {
+       return wordContex.mainWord
+          .split("")
+          .map(() => (
+            <input className={"inputAnswer"} type="text" disabled></input>
+          ),[wordContex.mainWord]);
+      })}
     </div>
-  )
+  );
 }

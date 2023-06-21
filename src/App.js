@@ -6,18 +6,15 @@ import CorrectAnswer from "./components/CorrectAnswer";
 import WrongAnswer from "./components/Wronganswer";
 import {ContexBox} from "./contex/Contex";
 export default function App() {
-  const wordContex = useContext(ContexBox)
   return (
     <div className="App">
       <div className={"Wronganswer"}>
-        <WrongAnswer />
         <Hangman />
+        <WrongAnswer />
       </div>
       <div className="keyboard">
-        {wordContex.mainWord.split('').map(()=>(
 
-        <CorrectAnswer />
-        ))}
+          <CorrectAnswer />
         <KeyboardNav />
       </div>
     </div>
