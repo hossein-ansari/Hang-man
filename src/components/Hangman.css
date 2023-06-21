@@ -7,26 +7,35 @@
 }
 .Foundation {
   position: absolute;
+  bottom: 5px;
+  left: 40px;
   width: 150px;
   height: 30px;
   border-radius: 50% 50% 51% 49% / 50% 50% 50% 50%;
   background-color: #161010;
 }
 .frame {
+  bottom: 22px;
+  left: 108px;
   position: absolute;
-  height: 150px;
+  height: 180px;
   width: 12px;
   background-color: #82602d;
 }
 .pate {
+  left: 88px;
+  bottom: 190px;
   position: absolute;
   height: 12px;
-  width: 112px;
+  width: 125px;
   background-color: #82602d;
 }
 .hanging {
-  width: 12px;
-  height: 62px;
+    left: 201px;
+    bottom: 140px;
+    position: absolute;
+    width: 12px;
+    height: 62px;
   background-color: #82602d;
 }
 .head {
