@@ -1,0 +1,49 @@
+.Hangman {
+  background-color: red;
+  width: 400px;
+  height: 250px;
+  margin-top: 20px;
+  position: relative;
+}
+.Foundation {
+  position: absolute;
+  width: 150px;
+  height: 30px;
+  border-radius: 50% 50% 51% 49% / 50% 50% 50% 50%;
+  background-color: #161010;
+}
+.frame {
+  position: absolute;
+  height: 150px;
+  width: 12px;
+  background-color: #82602d;
+}
+.pate {
+  position: absolute;
+  height: 12px;
+  width: 112px;
+  background-color: #82602d;
+}
+.hanging {
+  width: 12px;
+  height: 62px;
+  background-color: #82602d;
+}
+.head {
+  position: absolute;
+}
+.body {
+  position: absolute;
+}
+.Rhand {
+  position: absolute;
+}
+.lhand {
+  position: absolute;
+}
+.Rfoot {
+  position: absolute;
+}
+.Lfoot {
+  position: absolute;
+}

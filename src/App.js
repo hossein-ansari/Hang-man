@@ -4,17 +4,18 @@ import Hangman from "./components/Hangman";
 import KeyboardNav from "./components/KeyboardNav";
 import CorrectAnswer from "./components/CorrectAnswer";
 import WrongAnswer from "./components/Wronganswer";
-import {ContexBox} from "./contex/Contex";
+import { ContexBox } from "./contex/Contex";
 export default function App() {
   return (
     <div className="App">
       <div className={"Wronganswer"}>
         <Hangman />
-        <WrongAnswer />
+        <div className={"WrongComponent"}>
+          <WrongAnswer />
+        </div>
       </div>
       <div className="keyboard">
-
-          <CorrectAnswer />
+        <CorrectAnswer />
         <KeyboardNav />
       </div>
     </div>
