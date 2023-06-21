@@ -4,9 +4,9 @@ export const ContexBox = createContext();
 const AllDatas = ({ children }) => {
     const [mainWord, setMainWord] = useState("");
     useEffect(() => {
-      fetch("")
+      fetch("https://random-word-api.herokuapp.com/word")
         .then((res) => res.json())
-        .then((data) => setMainWord(data));
+        .then((data) => setMainWord(data[0]));
     }, []);
     console.log(mainWord);
   const [allWords, setAllWords] = useState(
@@ -14,7 +14,7 @@ const AllDatas = ({ children }) => {
   );
 
   return (
-    <ContexBox.Provider value={{ allWords }}>{children}</ContexBox.Provider>
+    <ContexBox.Provider value={{ allWords ,mainWord,mainWord}}>{children}</ContexBox.Provider>
   );
 };
 export default AllDatas;
