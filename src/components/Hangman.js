@@ -1,5 +1,5 @@
 import React from 'react'
-import './Hangman.css'
+import '../style/Hangman.css'
 export default function Hangman() {
   return (
     <div className='Hangman'>
@@ -7,7 +7,11 @@ export default function Hangman() {
       <div className='frame'></div>
       <div className='pate'></div>
       <div className='hanging'></div>
-      <div className='head'></div>
+      <div className='head'>
+        <div className='eyes'></div>
+        <div className='eyes'></div>
+        <div className='mouth'></div>
+      </div>
       <div className='body'></div>
       <div className='Rhand'></div>
       <div className='lhand'></div>

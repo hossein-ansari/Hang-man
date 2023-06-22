@@ -1,0 +1,124 @@
+.Hangman {
+
+  width: 400px;
+  height: 250px;
+  margin-top: 20px;
+  position: relative;
+}
+.Foundation {
+  position: absolute;
+  bottom: 5px;
+  left: 40px;
+  width: 150px;
+  height: 30px;
+  border-radius: 50% 50% 51% 49% / 50% 50% 50% 50%;
+  background-color: #161010;
+}
+.frame {
+  bottom: 22px;
+  left: 108px;
+  position: absolute;
+  height: 190px;
+  width: 12px;
+  background-color: #82602d;
+}
+.pate {
+  left: 88px;
+  bottom: 200px;
+  position: absolute;
+  height: 12px;
+  width: 125px;
+  background-color: #82602d;
+}
+.hanging {
+  left: 201px;
+  bottom: 150px;
+  position: absolute;
+  width: 5px;
+  height: 52px;
+  background-color: #82602d;
+}
+.head {
+  left: 183px;
+  bottom: 111px;
+  position: absolute;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 5px solid black;
+}
+.mouth {
+  left: 7px;
+  bottom: 5px;
+  position: absolute;
+  background-color: black;
+  border-radius: 50%;
+  border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  width: 15px;
+  height: 5px;
+}
+.eyes:nth-child(1) {
+  left: 15px;
+  bottom: 15px;
+  position: absolute;
+  background-color: black;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+.eyes:nth-child(2) {
+  left: 5px;
+  bottom: 15px;
+  position: absolute;
+  background-color: black;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+.body {
+  left: 200px;
+  bottom: 72px;
+  position: absolute;
+  width: 8px;
+  height: 40px;
+  background-color: black;
+  border-top: 4px solid #82602d;
+  z-index: 5;
+}
+.Rhand {
+  left: 190px;
+  bottom: 75px;
+  position: absolute;
+  width: 5px;
+  height: 40px;
+  background-color: black;
+  transform: rotate(40deg);
+}
+.lhand {
+  left: 213px;
+  bottom: 75px;
+  position: absolute;
+  width: 5px;
+  height: 40px;
+  background-color: black;
+  transform: rotate(-40deg);
+}
+.Rfoot {
+  left: 190px;
+  bottom: 40px;
+  position: absolute;
+  width: 5px;
+  height: 40px;
+  background-color: black;
+  transform: rotate(30deg);
+}
+.Lfoot {
+  left: 213px;
+  bottom: 40px;
+  position: absolute;
+  width: 5px;
+  height: 40px;
+  background-color: black;
+  transform: rotate(-30deg);
+}

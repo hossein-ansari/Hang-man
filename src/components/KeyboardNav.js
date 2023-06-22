@@ -1,6 +1,6 @@
 import React ,{useContext} from 'react'
 import {ContexBox} from "../contex/Contex";
-import './KewyboardNav.css'
+import '../style/KewyboardNav.css'
 export default function KeyboardNav() {
   const data = useContext(ContexBox)
   

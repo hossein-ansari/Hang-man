@@ -1,5 +1,5 @@
 import React, { useContext, useMemo } from "react";
-import "./CorrectAnswer.css";
+import "../style/CorrectAnswer.css";
 import {ContexBox} from "../contex/Contex";
 export default function CorrectAnswer() {
   const wordContex = useContext(ContexBox);

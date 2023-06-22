@@ -1,8 +1,8 @@
 .App {
   text-align: center;
-  position: relative;
 }
 .Wronganswer {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -15,10 +15,21 @@
   align-items: center;
 }
 .WrongComponent{
-  background-color: #a75252;
   position: absolute;
-  width: 300px;
+  width: 250px;
   height: 230px;
   top: 20px;
   right: 50px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+@media(max-width:768px) {
+  .WrongComponent{
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    top: 20px;
+    right: 10px;
+    border: 3px solid black;
+  }
 }
