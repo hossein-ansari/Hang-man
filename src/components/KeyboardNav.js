@@ -9,8 +9,8 @@ export default function KeyboardNav() {
     data.setSelectedWord(Select);
     data.setIsInclude(splitMainWord.includes(`${Select}`));
   }
+  let i = 0
   if (data.isInclude) {
-    let i = 0
     splitMainWord.forEach((W) => {
       if (W === data.selectedWord) {
         data.indexSelected.push(i)
