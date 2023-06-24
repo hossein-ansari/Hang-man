@@ -13,13 +13,14 @@ export default function KeyboardNav() {
   if (data.isInclude) {
     splitMainWord.forEach((W) => {
       if (W === data.selectedWord) {
-        data.indexSelected.push(i)
+        data.indexSelected.push({W,i})
         i++
       }else{
         i++
       }
     });
   }
+  
   console.log(data.indexSelected);
 
   return (

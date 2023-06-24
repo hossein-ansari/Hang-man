@@ -15,10 +15,11 @@ const AllDatas = ({ children }) => {
   );
     const [isInclude,setIsInclude] = useState()
     const [indexSelected,setIndexSelected]=useState([])
+    const [inputCorecctWords,setInputCorecctWords]= useState()
     console.log(mainWord);
   return (
     <ContexBox.Provider
-      value={{ allWords, mainWord, mainWord, selectedWord,isInclude,indexSelected, setIndexSelected,setSelectedWord ,setIsInclude}}
+      value={{ allWords, mainWord, mainWord, selectedWord,isInclude,indexSelected,inputCorecctWords,setInputCorecctWords, setIndexSelected,setSelectedWord ,setIsInclude}}
     >
       {children}
     </ContexBox.Provider>
