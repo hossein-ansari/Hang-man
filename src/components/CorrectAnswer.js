@@ -1,18 +1,19 @@
-import React, { useContext, useMemo } from "react";
+import React, { useContext, useEffect, useMemo, useState } from "react";
 import "../style/CorrectAnswer.css";
-import { ContexBox } from "../contex/Contex";
+import { contextBox } from "../context/Context";
 export default function CorrectAnswer() {
-  const data = useContext(ContexBox);
-  let items;
-  function test() {
-    items = data.mainWord
-      .split("")
-      .map((e) => <p className={"inputAnswer"}>{e}</p>);
-  }
-  test()
-  items[0] = <p className={"inputAnswer"}>h</p>
-  console.log(items);
-  // data.setInputCorecctWords(items)
+  const data = useContext(contextBox);
+  useEffect(() => {
 
-  return <div className="CorrectBox">{items}</div>;
+  }, []);
+  return (
+    <div className="CorrectBox">
+      {data.mainWordArray.map((items) => (
+        <p className="inputAnswer">
+          {" "}
+          <span className={`${items.className}`}>{items.Word}</span>{" "}
+        </p>
+      ))}
+    </div>
+  );
 }

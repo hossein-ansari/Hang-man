@@ -1,8 +1,8 @@
 import React, { useContext, useMemo, useState } from "react";
-import { ContexBox } from "../contex/Contex";
+import { contextBox } from "../context/Context";
 import "../style/KewyboardNav.css";
 export default function KeyboardNav() {
-  const data = useContext(ContexBox);
+  const data = useContext(contextBox);
   const splitMainWord = data.mainWord.split("");
   function selectWord(e) {
     const Select = e.target.value;
@@ -13,7 +13,7 @@ export default function KeyboardNav() {
   if (data.isInclude) {
     splitMainWord.forEach((W) => {
       if (W === data.selectedWord) {
-        data.indexSelected.push({W,i})
+        data.indexSelected.push(i)
         i++
       }else{
         i++
@@ -26,7 +26,7 @@ export default function KeyboardNav() {
   return (
     <div className="KewyboardNav">
       {data.allWords.map((word) => (
-        <button
+        <button key={word}
           onClick={(e) => {
             selectWord(e);
           }}
