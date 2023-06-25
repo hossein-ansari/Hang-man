@@ -33,5 +33,9 @@ padding: 1rem 0;
 
 }
 .display-none{
-    opacity: 50%;
+    opacity: 30%;
+}
+.display{
+    opacity: 100%;
+
 }

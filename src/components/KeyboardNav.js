@@ -10,6 +10,7 @@ export default function KeyboardNav() {
     data.setIsInclude(splitMainWord.includes(`${Select}`));
   }
   let i = 0
+  
   if (data.isInclude) {
     splitMainWord.forEach((W) => {
       if (W === data.selectedWord) {
@@ -26,7 +27,7 @@ export default function KeyboardNav() {
   return (
     <div className="KewyboardNav">
       {data.allWords.map((word) => (
-        <button key={word}
+        <button
           onClick={(e) => {
             selectWord(e);
           }}

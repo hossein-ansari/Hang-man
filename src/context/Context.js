@@ -25,6 +25,13 @@ const AllDatas = ({ children }) => {
       ]);
     });
   }, [mainWord]);
+  useEffect(()=>{
+    indexSelected.forEach( (I) => {
+      console.log('j');
+      // newMainWordArray[I].className = 'display'
+    });
+    // setMainWordArray()
+  },[indexSelected]);
   console.log(mainWord);
 
   console.log(indexSelected);
