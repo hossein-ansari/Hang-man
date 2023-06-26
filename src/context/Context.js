@@ -9,7 +9,7 @@ const AllDatas = ({ children }) => {
   const [allWords, setAllWords] = useState(
     "qwehyuopxasdfjrkmitlzcvbng".split("")
   );
-  const [isInclude, setIsInclude] = useState();
+  const [wrongAnswersArray, setWrongAnswersArray] = useState([]);
   const [itemsSelected, setItemsSelected] = useState([]);
   const [inputCorecctWords, setInputCorecctWords] = useState();
   useEffect(() => {
@@ -25,18 +25,7 @@ const AllDatas = ({ children }) => {
       ]);
     });
   }, [mainWord]);
-  useEffect(()=>{
-    itemsSelected.forEach( (I) => {
-      console.log('j');
-      // newMainWordArray[I].className = 'display'
-    });
-    // setMainWordArray()
-  },[itemsSelected]);
-  console.log(mainWord);
-
-  console.log(itemsSelected);
-  console.log(mainWordArray);
-
+  console.log(wrongAnswersArray);
   return (
     <contextBox.Provider
       value={{
@@ -44,7 +33,7 @@ const AllDatas = ({ children }) => {
         mainWord,
         mainWord,
         selectedWord,
-        isInclude,
+        wrongAnswersArray,
         itemsSelected,
         inputCorecctWords,
         mainWordArray,
@@ -52,7 +41,7 @@ const AllDatas = ({ children }) => {
         setItemsSelected,
         setMainWordArray,
         setSelectedWord,
-        setIsInclude,
+        setWrongAnswersArray,
       }}
     >
       {children}
