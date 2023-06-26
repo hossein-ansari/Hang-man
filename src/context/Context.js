@@ -10,7 +10,7 @@ const AllDatas = ({ children }) => {
     "qwehyuopxasdfjrkmitlzcvbng".split("")
   );
   const [isInclude, setIsInclude] = useState();
-  const [indexSelected, setIndexSelected] = useState([]);
+  const [itemsSelected, setItemsSelected] = useState([]);
   const [inputCorecctWords, setInputCorecctWords] = useState();
   useEffect(() => {
     fetch("https://random-word-api.herokuapp.com/word")
@@ -26,15 +26,15 @@ const AllDatas = ({ children }) => {
     });
   }, [mainWord]);
   useEffect(()=>{
-    indexSelected.forEach( (I) => {
+    itemsSelected.forEach( (I) => {
       console.log('j');
       // newMainWordArray[I].className = 'display'
     });
     // setMainWordArray()
-  },[indexSelected]);
+  },[itemsSelected]);
   console.log(mainWord);
 
-  console.log(indexSelected);
+  console.log(itemsSelected);
   console.log(mainWordArray);
 
   return (
@@ -45,11 +45,11 @@ const AllDatas = ({ children }) => {
         mainWord,
         selectedWord,
         isInclude,
-        indexSelected,
+        itemsSelected,
         inputCorecctWords,
         mainWordArray,
         setInputCorecctWords,
-        setIndexSelected,
+        setItemsSelected,
         setMainWordArray,
         setSelectedWord,
         setIsInclude,
