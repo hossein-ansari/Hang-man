@@ -9,7 +9,7 @@ export default function KeyboardNav() {
     const newMainWordArray = [...data.mainWordArray];
 
     if (splitMainWord.includes(`${select}`)) {
-      const foundItem = data.mainWordArray.forEach((element) => {
+      data.mainWordArray.forEach((element) => {
         if (element.Word === select) {
           element.className = "display";
         }
