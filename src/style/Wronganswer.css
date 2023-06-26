@@ -1,45 +1,41 @@
-.WrongAnswers{
-    position: absolute;
-    width: 250px;
-    height: 230px;
-    top: 20px;
-    right: 50px;
-    border: 3px solid black;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-
+.WrongAnswers {
+  position: absolute;
+  width: 250px;
+  height: 230px;
+  top: 20px;
+  right: 50px;
+  border: 3px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
-.headerName{
-   padding: 5px 0;
+.headerName {
+  padding: 5px 0;
 }
-.headerName hr{
-    border: 3px solid black;
-    width: 200px;
-    border-radius: 5px;
-    margin: 10px auto;
+.headerName hr {
+  border: 3px solid black;
+  width: 200px;
+  border-radius: 5px;
+  margin: 10px auto;
 }
-.wrongWordUl{
-    height: max-content;
+.wrongWordUl {
+  height: max-content;
 }
-.WrongAnswer-Words{
-    margin: 0 auto;
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    padding-right: 30px;
-    
+.WrongAnswer-Words {
+  margin: 0 auto;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  padding-right: 30px;
 }
-.wrongWordLi{
-    color: black;
-    text-transform: capitalize;
-    background-color: rgba(255, 107, 107, 0.277);
-    margin: 5px auto;
-    border-radius: 5px;
-    /* padding: 5px; */
-    width: 80px;
-    height: 30px;
-    border: 2px solid rgb(255, 0, 0);
+.wrongWordLi {
+  color: black;
+  background-color: rgba(255, 107, 107, 0.277);
+  margin: 5px auto;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+  border: 2px solid rgb(255, 0, 0);
 }
