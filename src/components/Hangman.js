@@ -12,8 +12,10 @@ export default function Hangman() {
       {data.wrongAnswersArray.length >= 1 && (
         <div className="head">
           {" "}
-          <div className="eyes"></div>
-          <div className="eyes"></div>
+          <div className={data.wrongAnswersArray.length >= 6 ? 'dead' : 'eyes'}></div>
+          <div className={data.wrongAnswersArray.length >= 6 ? 'dead' : 'eyes'}></div>
+          {data.wrongAnswersArray.length >= 6 && <div className={data.wrongAnswersArray.length >= 6 ? 'dead' : 'eyes'}></div>}
+          {data.wrongAnswersArray.length >= 6 && <div className={data.wrongAnswersArray.length >= 6 ? 'dead' : 'eyes'}></div>}
           <div className="mouth"></div>
         </div>
       )}
