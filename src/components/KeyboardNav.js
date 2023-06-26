@@ -6,22 +6,18 @@ export default function KeyboardNav() {
   const splitMainWord = data.mainWord.split("");
   function selectWord(e) {
     const select = e.target.value;
-    const newMainWordArray = [...data.mainWordArray]
-    data.setSelectedWord(select);
-    data.setIsInclude(splitMainWord.includes(`${select}`));
-    if (data.isInclude) {
-     const foundItem = data.mainWordArray.forEach(element => {
-      if (element.Word === select) {
-        const findedWord = newMainWordArray.find((id)=> id.Word === select)
-        findedWord.className = 'display'
-      }
-     })
+    const newMainWordArray = [...data.mainWordArray];
 
-     data.setMainWordArray(newMainWordArray)
+    if (splitMainWord.includes(`${select}`)) {
+      const foundItem = data.mainWordArray.forEach((element) => {
+        if (element.Word === select) {
+          element.className = "display";
+        }
+      });
+
+      data.setMainWordArray(newMainWordArray);
     }
   }
-
-
 
   return (
     <div className="KewyboardNav">
