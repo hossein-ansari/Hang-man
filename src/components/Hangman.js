@@ -9,16 +9,19 @@ export default function Hangman() {
       <div className="frame"></div>
       <div className="pate"></div>
       <div className="hanging"></div>
-      <div className="head">
-        <div className="eyes"></div>
-        <div className="eyes"></div>
-        <div className="mouth"></div>
-      </div>
-      <div className="body"></div>
-      <div className="Rhand"></div>
-      <div className="lhand"></div>
-      <div className="Rfoot"></div>
-      <div className="Lfoot"></div>
+      {data.wrongAnswersArray.length >= 1 && (
+        <div className="head">
+          {" "}
+          <div className="eyes"></div>
+          <div className="eyes"></div>
+          <div className="mouth"></div>
+        </div>
+      )}
+      {data.wrongAnswersArray.length >= 2 && <div className="body"></div>}
+      {data.wrongAnswersArray.length >= 3 && <div className="Rhand"></div>}
+      {data.wrongAnswersArray.length >= 4 && <div className="lhand"></div>}
+      {data.wrongAnswersArray.length >= 5 && <div className="Rfoot"></div>}
+      {data.wrongAnswersArray.length >= 6 && <div className="Lfoot"></div>}
     </div>
   );
 }
