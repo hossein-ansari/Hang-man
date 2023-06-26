@@ -9,14 +9,14 @@
   align-items: stretch;
   height: 250px;
 }
-.keyboard{
+.keyboard {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-@media(max-width:768px) {
-  .WrongComponent{
+@media (max-width: 768px) {
+  .WrongComponent {
     position: absolute;
     width: 150px;
     height: 200px;

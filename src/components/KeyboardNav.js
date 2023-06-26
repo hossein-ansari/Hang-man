@@ -14,8 +14,8 @@ export default function KeyboardNav() {
           element.className = "display";
         }
       });
-    }else{
-      data.setWrongAnswersArray(prev=> [...prev,select])
+    } else {
+      data.setWrongAnswersArray((prev) => [...prev, select]);
     }
     data.setMainWordArray(newMainWordArray);
   }
