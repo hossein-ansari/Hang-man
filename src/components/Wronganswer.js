@@ -1,17 +1,21 @@
 import React, { useContext } from "react";
-import "../style/Wronganswer.css";
+import "../style/WrongAnswer.css";
 import { contextBox } from "../context/Context";
 export default function Wronganswer() {
-  const data = useContext(contextBox)
+  const data = useContext(contextBox);
 
   return (
-    <div className="Wronganswer">
-      <h2 className="headerName">Wrong Answer<hr></hr></h2>
-      <ul className="Wronganswer-Words">
-          {data.wrongAnswersArray.map((element)=>(
+    <div className="WrongAnswers">
+      <h2 className="headerName">
+        Wrong Answer<hr></hr>
+      </h2>
+      <div className="wrongWordUl">
+        <ul className="WrongAnswer-Words">
+          {data.wrongAnswersArray.map((element) => (
             <li className="wrongWordLi">{element}</li>
           ))}
-      </ul>
+        </ul>
+      </div>
     </div>
   );
 }

@@ -14,15 +14,7 @@
   flex-direction: column;
   align-items: center;
 }
-.WrongComponent{
-  position: absolute;
-  width: 250px;
-  height: 230px;
-  top: 20px;
-  right: 50px;
-  border: 3px solid black;
-  border-radius: 10px;
-}
+
 @media(max-width:768px) {
   .WrongComponent{
     position: absolute;

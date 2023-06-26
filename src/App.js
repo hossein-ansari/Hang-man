@@ -3,7 +3,7 @@ import "./style/App.css";
 import Hangman from "./components/Hangman";
 import KeyboardNav from "./components/KeyboardNav";
 import CorrectAnswer from "./components/CorrectAnswer";
-import WrongAnswer from "./components/Wronganswer";
+import WrongAnswer from "./components/WrongAnswer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ThemeProvider from 'react-bootstrap/ThemeProvider'
 export default function App() {
