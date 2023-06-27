@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ThemeProvider from 'react-bootstrap/ThemeProvider'
 export default function App() {
   return (
-    <div className="App">
+    <div className="App" tabIndex="0" onKeyPress={}>
       <div className={"Wronganswer primary"}>
         <Hangman />
         <div className={"WrongComponent"}>
