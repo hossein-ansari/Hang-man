@@ -2,16 +2,17 @@ import React, { useState, useEffect, createContext } from "react";
 export const contextBox = createContext();
 
 const AllDatas = ({ children }) => {
+  // fech api Word
   const [mainWord, setMainWord] = useState("");
   const [mainWordArray, setMainWordArray] = useState([]);
-
-  const [selectedWord, setSelectedWord] = useState("");
+   // render all word
   const [allWords, setAllWords] = useState(
     "qwehyuopxasdfjrkmitlzcvbng".split("")
   );
   const [wrongAnswersArray, setWrongAnswersArray] = useState([]);
   const [itemsSelected, setItemsSelected] = useState([]);
   const [inputCorecctWords, setInputCorecctWords] = useState();
+  // API
   useEffect(() => {
     fetch("https://random-word-api.herokuapp.com/word")
       .then((res) => res.json())
@@ -32,7 +33,6 @@ const AllDatas = ({ children }) => {
         allWords,
         mainWord,
         mainWord,
-        selectedWord,
         wrongAnswersArray,
         itemsSelected,
         inputCorecctWords,
@@ -40,7 +40,6 @@ const AllDatas = ({ children }) => {
         setInputCorecctWords,
         setItemsSelected,
         setMainWordArray,
-        setSelectedWord,
         setWrongAnswersArray,
       }}
     >
