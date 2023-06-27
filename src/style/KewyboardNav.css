@@ -1,6 +1,6 @@
 .KewyboardNav {
   display: flex;
-
+  border: none;
   flex-wrap: wrap;
   width: 450px;
   justify-content: center;

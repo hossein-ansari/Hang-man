@@ -1,27 +1,23 @@
-.App {
+.App,
+.App:focus{
   text-align: center;
+  outline: 0px solid transparent;
 }
+
 .Wronganswer {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: stretch;
+  border: none;
   height: 250px;
 }
 .keyboard {
   display: flex;
   flex-direction: column;
+  border: none;
   align-items: center;
 }
 
-@media (max-width: 768px) {
-  .WrongComponent {
-    position: absolute;
-    width: 150px;
-    height: 200px;
-    top: 20px;
-    right: 10px;
-    border: 3px solid black;
-  }
-}
+
