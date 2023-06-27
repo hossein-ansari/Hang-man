@@ -5,7 +5,7 @@ const AllDatas = ({ children }) => {
   // fech api Word
   const [mainWord, setMainWord] = useState("");
   const [mainWordArray, setMainWordArray] = useState([]);
-   // render all word
+  // render all word
   const [allWords, setAllWords] = useState(
     "qwehyuopxasdfjrkmitlzcvbng".split("")
   );
@@ -18,6 +18,7 @@ const AllDatas = ({ children }) => {
       .then((res) => res.json())
       .then((data) => setMainWord(data[0]));
   }, []);
+  // Display the correctly guessed words
   useEffect(() => {
     mainWord.split("").forEach((element) => {
       setMainWordArray((prev) => [
@@ -26,7 +27,7 @@ const AllDatas = ({ children }) => {
       ]);
     });
   }, [mainWord]);
-  // console.log(wrongAnswersArray);
+
   return (
     <contextBox.Provider
       value={{
