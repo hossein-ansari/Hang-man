@@ -25,7 +25,7 @@ const AllDatas = ({ children }) => {
       ]);
     });
   }, [mainWord]);
-  console.log(wrongAnswersArray);
+  // console.log(wrongAnswersArray);
   return (
     <contextBox.Provider
       value={{
