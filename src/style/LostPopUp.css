@@ -1,26 +1,29 @@
-.LostPop-up{
-    width: 400px;
-    height: 400px;
-    background-color: red;
-    padding: 1rem;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    
+.LostPop-up {
+  width: 400px;
+  height: 400px;
+  background-color: red;
+  padding: 1rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.477);
+    border-radius: 10px ;
 }
-.lostWord{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 3.5rem;
-
+.lostWord {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 3.5rem;
+  color: white;
 }
-.selectedWord{
-    font-size: 1.5rem;
-
+.selectedWord {
+  font-size: 1.5rem;
 }
-.reloadBtn{
-    width: 100px;
-    height: 50px;
-    border-radius: 10px;
+.reloadBtn {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.4rem;
+  width: 150px;
+  height: 60px;
+  box-shadow: 0 0 7px 0 rgb(0, 0, 0);
+  color: white;
 }
