@@ -9,11 +9,12 @@ import ThemeProvider from "react-bootstrap/ThemeProvider";
 import useKeyPress from "./Hooks/useKeyPress";
 import { contextBox } from "./context/Context";
 import LostPopUp from './components/LostPopUp.js'
+import Routes from "./routes/Routes";
 export default function App() {
   const [keyElement, setKeyElement] = useState();
   const data = useContext(contextBox);
   useKeyPress(keyElement);
-
+  const router = 
   return (
     <div className="App" tabIndex="0" onKeyPress={(e) => setKeyElement(e.key)}>
       {/* conditional rendering for pop up  */}
