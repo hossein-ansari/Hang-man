@@ -8,14 +8,14 @@
 .LostPop-up {
   width: 400px;
   height: 400px;
-  background-color: red;
+  background-color: rgba(183, 0, 0, 0.152);
   padding: 1rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.477);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.477);
   border-radius: 10px;
   background-image: url(../image/blood.png);
   background-size: 500px;
@@ -40,10 +40,10 @@
   border-radius: 7px;
   box-shadow: 0 0 7px 0 rgb(0, 0, 0);
   color: white;
-  background-color: rgb(239, 0, 0);
+  background-color: rgba(104, 0, 0, 0.273);
+  transition: 0.3s ;
 }
 .reloadBtn:hover{
-    background-color: rgb(194, 0, 0);
+    background-color: rgba(93, 0, 0, 0.495);
     font-size: 1.5rem;
-    transition: 0.3s ease-in-out;
 }

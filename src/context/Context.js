@@ -7,7 +7,7 @@ const AllDatas = ({ children }) => {
   const [mainWordArray, setMainWordArray] = useState([]);
   // render all word
   const [allWords, setAllWords] = useState(
-    "qwehyuopxasdfjrkmitlzcvbng".split("")
+    "qwertyuiopasdfghjklzxcvbnm".split("")
   );
   const [wrongAnswersArray, setWrongAnswersArray] = useState([]);
   const [itemsSelected, setItemsSelected] = useState([]);

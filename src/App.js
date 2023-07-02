@@ -17,7 +17,7 @@ export default function App() {
   return (
     <div className="App" tabIndex="0" onKeyPress={(e) => setKeyElement(e.key)}>
       {/* conditional rendering for pop up  */}
-      {data.wrongAnswersArray.length < 0 ? (
+      {data.wrongAnswersArray.length < 6 ? (
         <div>
           {" "}
           <div className={"Wronganswer"}>
