@@ -1,3 +1,10 @@
+.LostPopUpComponent {
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(205, 247, 255);
+    display: flex;
+    align-items: center;
+}
 .LostPop-up {
   width: 400px;
   height: 400px;
@@ -9,7 +16,7 @@
   justify-content: space-between;
   flex-direction: column;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.477);
-    border-radius: 10px ;
+  border-radius: 10px;
 }
 .lostWord {
   font-family: "Courier New", Courier, monospace;
