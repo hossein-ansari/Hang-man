@@ -10,12 +10,19 @@ import { contextBox } from "./context/Context";
 import LostPopUp from "./components/LostPopUp";
 export default function App() {
   const [keyElement, setKeyElement] = useState();
+  const [isLose, setIsLose] = useState(false);
+
   const data = useContext(contextBox);
   useKeyPress(keyElement);
+  if (data.wrongAnswersArray.length >= 6) {
+    setTimeout(() => {
+      setIsLose(true);
+    }, 3000);
+  }
   return (
     <div className="App" tabIndex="0" onKeyPress={(e) => setKeyElement(e.key)}>
       {/* conditional rendering for pop up  */}
-      {data.wrongAnswersArray.length < 6 ? (
+      {isLose === false ? (
         <div>
           {" "}
           <div className={"Wronganswer"}>
@@ -30,10 +37,7 @@ export default function App() {
           </div>
         </div>
       ) : (
-        <div>
-          {" "}
-          <LostPopUp />{" "}
-        </div>
+        <div>{isLose? <LostPopUp /> : ""}</div>
       )}
     </div>
   );
