@@ -7,22 +7,35 @@ import WrongAnswer from "./components/WrongAnswer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ThemeProvider from "react-bootstrap/ThemeProvider";
 import useKeyPress from "./Hooks/useKeyPress";
-
+import { contextBox } from "./context/Context";
+import LostPopUp from './components/LostPopUp.js'
 export default function App() {
   const [keyElement, setKeyElement] = useState();
+  const data = useContext(contextBox);
   useKeyPress(keyElement);
+
   return (
     <div className="App" tabIndex="0" onKeyPress={(e) => setKeyElement(e.key)}>
-      <div className={"Wronganswer"}>
-        <Hangman />
-        <div className={"WrongComponent"}>
-          <WrongAnswer />
+      {/* conditional rendering for pop up  */}
+      {data.wrongAnswersArray.length < 0 ? (
+        <div>
+          {" "}
+          <div className={"Wronganswer"}>
+            <Hangman />
+            <div className={"WrongComponent"}>
+              <WrongAnswer />
+            </div>
+          </div>
+          <div className="keyboard">
+            <CorrectAnswer />
+            <KeyboardNav />
+          </div>
         </div>
-      </div>
-      <div className="keyboard">
-        <CorrectAnswer />
-        <KeyboardNav />
-      </div>
+      ) : (
+        <div>
+          <LostPopUp />
+        </div>
+      )}
     </div>
   );
 }

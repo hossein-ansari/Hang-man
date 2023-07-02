@@ -1,0 +1,26 @@
+.LostPop-up{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    padding: 1rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+.lostWord{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3.5rem;
+
+}
+.selectedWord{
+    font-size: 1.5rem;
+
+}
+.reloadBtn{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
