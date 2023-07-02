@@ -1,5 +1,5 @@
-import LostPopUp from "../components/LostPopUp";
+import App from "../App";
+import LostPopUp from "../components/LostPopUp.js";
 let Routes = [
-  { path: "/lostPage", element: <LostPopUp /> },
 ];
 export default Routes;
