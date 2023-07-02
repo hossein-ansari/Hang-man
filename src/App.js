@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import { useRoutes ,Navigate} from "react-router-dom";
 import "./style/App.css";
 import Hangman from "./components/Hangman";
 import KeyboardNav from "./components/KeyboardNav";
@@ -14,7 +15,7 @@ export default function App() {
   const [keyElement, setKeyElement] = useState();
   const data = useContext(contextBox);
   useKeyPress(keyElement);
-  const router = 
+  const router = useRoutes(Routes);
   return (
     <div className="App" tabIndex="0" onKeyPress={(e) => setKeyElement(e.key)}>
       {/* conditional rendering for pop up  */}
@@ -33,9 +34,7 @@ export default function App() {
           </div>
         </div>
       ) : (
-        <div>
-          <LostPopUp />
-        </div>
+        <Navigate to={"./lostPage"} />
       )}
     </div>
   );
