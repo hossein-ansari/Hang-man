@@ -20,7 +20,17 @@ export default function App() {
     }, 3000);
   }
   return (
-    <div className="App" tabIndex="0" onKeyPress={(e) => setKeyElement(e.key)}>
+    <div
+      className="App"
+      tabIndex="0"
+      onKeyPress={(e) => {
+        if (data.wrongAnswersArray.length >= 6) {
+          return false;
+        } else {
+          setKeyElement(e.key);
+        }
+      }}
+    >
       {/* conditional rendering for pop up  */}
       {isLose === false ? (
         <div>
@@ -37,7 +47,7 @@ export default function App() {
           </div>
         </div>
       ) : (
-        <div>{isLose? <LostPopUp /> : ""}</div>
+        <div>{isLose ? <LostPopUp /> : ""}</div>
       )}
     </div>
   );

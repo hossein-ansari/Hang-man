@@ -4,14 +4,18 @@ import useClickKeyboard from "../Hooks/useClickKeyboard";
 import "../style/KewyboardNav.css";
 export default function KeyboardNav() {
   const data = useContext(contextBox);
-  const [clickElement,setClickElement]= useState()
-  useClickKeyboard(clickElement)
+  const [clickElement, setClickElement] = useState();
+  useClickKeyboard(clickElement);
   return (
     <div className="KewyboardNav">
       {data.allWords.map((word) => (
         <button
           onClick={(e) => {
-            setClickElement(e.target.value);
+            if (data.wrongAnswersArray.length >= 6) {
+              return false;
+            } else {
+              setClickElement(e.target.value);
+            }
           }}
           className="words"
           value={word}
