@@ -1,9 +1,9 @@
 .LostPopUpComponent {
-    height: 100vh;
-    margin: 0;
-    background-image: url(../image//bangsal-nam-9HMGyZJfrk8-unsplash.jpg);
-    display: flex;
-    align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(../image//bangsal-nam-9HMGyZJfrk8-unsplash.jpg);
+  display: flex;
+  align-items: center;
 }
 .LostPop-up {
   width: 400px;
@@ -18,10 +18,9 @@
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.477);
   border-radius: 10px;
   background-image: url(../image/blood.png);
-  background-position: 10px 10px ;
-  background-size: cover;
+  background-size: 500px;
+  background-repeat: no-repeat;
 }
-
 
 .lostWord {
   font-family: "Courier New", Courier, monospace;
@@ -29,6 +28,8 @@
   color: white;
 }
 .selectedWord {
+  color: white;
+    text-transform: capitalize;
   font-size: 1.5rem;
 }
 .reloadBtn {
@@ -36,6 +37,13 @@
   font-size: 1.4rem;
   width: 150px;
   height: 60px;
+  border-radius: 7px;
   box-shadow: 0 0 7px 0 rgb(0, 0, 0);
   color: white;
+  background-color: rgb(239, 0, 0);
+}
+.reloadBtn:hover{
+    background-color: rgb(194, 0, 0);
+    font-size: 1.5rem;
+    transition: 0.3s ease-in-out;
 }
