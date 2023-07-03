@@ -4,7 +4,6 @@ import { contextBox } from "../context/Context";
 export default function Hangman() {
   const data = useContext(contextBox);
   const [isStart, setIsStart] = useState(false);
-
   return (
     <div className="Hangman">
       <div className="Foundation"></div>
