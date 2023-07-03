@@ -19,11 +19,15 @@ export default function App() {
       data.setIsLose(true);
     }, 2000);
   }
-  if (data.mainWordArray.length === data.along) {
+  if (
+    data.mainWordArray.length === data.along &&
+    data.mainWordArray.length !== 0
+  ) {
     setTimeout(() => {
       data.setIsWin(true);
-    }, 500);
+    }, 2000);
   }
+
   return (
     <div
       className="App"
@@ -51,10 +55,15 @@ export default function App() {
             <KeyboardNav />
           </div>
         </div>
-      ) : data.isWin === true && data.mainWordArray.length !== 0 ? (
-        <div><WonPopUp /></div>
+      ) : data.isWin ? (
+        <div>
+          <WonPopUp />
+        </div>
       ) : data.isLose ? (
-        <div> <LostPopUp /></div>
+        <div>
+          {" "}
+          <LostPopUp />
+        </div>
       ) : (
         ""
       )}
