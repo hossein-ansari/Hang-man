@@ -29,7 +29,7 @@ export default function Hangman() {
       {data.wrongAnswersArray.length >= 1 && (
         <div
           className={`head ${
-            data.wrongAnswersArray.length >= 6 ? "RopePullUpBody" : ""
+            data.wrongAnswersArray.length >= 6 ? "RopePullUpHead" : ""
           }`}
         >
           {" "}
@@ -55,35 +55,35 @@ export default function Hangman() {
       {data.wrongAnswersArray.length >= 2 && (
         <div
           className={`body ${
-            data.wrongAnswersArray.length >= 6 ? "RopePullUpBody" : ""
+            data.wrongAnswersArray.length >= 6 ? "RopePullUpHead" : ""
           }`}
         ></div>
       )}
       {data.wrongAnswersArray.length >= 3 && (
         <div
           className={`Rhand ${
-            data.wrongAnswersArray.length >= 6 ? "RopePullUpBody" : ""
+            data.wrongAnswersArray.length >= 6 ? "RopePullUpRight" : ""
           }`}
         ></div>
       )}
       {data.wrongAnswersArray.length >= 4 && (
         <div
           className={`Lhand ${
-            data.wrongAnswersArray.length >= 6 ? "RopePullUpBody" : ""
+            data.wrongAnswersArray.length >= 6 ? "RopePullUpLeft" : ""
           }`}
         ></div>
       )}
       {data.wrongAnswersArray.length >= 5 && (
         <div
           className={`Rfoot ${
-            data.wrongAnswersArray.length >= 6 ? "RopePullUpBody" : ""
+            data.wrongAnswersArray.length >= 6 ? "RopePullUpRight" : ""
           }`}
         ></div>
       )}
       {data.wrongAnswersArray.length >= 6 && (
         <div
           className={`Lfoot ${
-            data.wrongAnswersArray.length >= 6 ? "RopePullUpBody" : ""
+            data.wrongAnswersArray.length >= 6 ? "RopePullUpLeft" : ""
           }`}
         ></div>
       )}

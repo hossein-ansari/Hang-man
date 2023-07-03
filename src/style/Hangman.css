@@ -38,7 +38,7 @@
     height: 30px;
   }
 }
-@keyframes RopePullUpBody {
+@keyframes RopePullUpHead {
   0% {
   }
   20% {
@@ -46,6 +46,26 @@
   }
   100% {
     transform: translateY(-22px);
+  }
+}
+@keyframes RopePullUpRight {
+  0% {
+  }
+  20% {
+    transform: translate(3px, -17px) rotate(20deg);
+  }
+  100% {
+    transform: translate(3px, -17px) rotate(20deg);
+  }
+}
+@keyframes RopePullUpLeft {
+  0% {
+  }
+  20% {
+    transform: translate(-3px, -17px) rotate(-20deg);
+  }
+  100% {
+    transform: translate(-3px, -17px) rotate(-20deg);
   }
 }
 .animationStartHandle {
@@ -57,10 +77,15 @@
 .RopePullUp {
   animation: RopePullUp 4s ease-in-out;
 }
-.RopePullUpBody {
-  animation: RopePullUpBody 4s ease-in-out;
+.RopePullUpHead {
+  animation: RopePullUpHead 4s ease-in-out;
 }
-
+.RopePullUpRight {
+  animation: RopePullUpRight 4s ease-in-out;
+}
+.RopePullUpLeft {
+  animation: RopePullUpLeft 4s ease-in-out;
+}
 .Hangman {
   width: 400px;
   height: 250px;
