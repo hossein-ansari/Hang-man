@@ -17,7 +17,7 @@ export default function App() {
   if (data.wrongAnswersArray.length >= 6) {
     setTimeout(() => {
       setIsLose(true);
-    }, 3000);
+    }, 2000);
   }
   return (
     <div

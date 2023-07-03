@@ -1,11 +1,3 @@
-@keyframes drippingDown{
-  0%{
-    transform: translateY(3px);
-  }
-  100%{
-    transform: translateY(-3px);
-  }
-}
 .LostPopUpComponent {
   height: 100vh;
   margin: 0;

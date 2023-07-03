@@ -1,3 +1,49 @@
+:root {
+  --clr-wood: #82602d;
+}
+@keyframes PullDownHandle {
+  0% {
+    transform: rotate(35deg);
+  }
+  20% {
+    transform: rotate(-35deg);
+  }
+  100% {
+    transform: rotate(-35deg);
+  }
+}
+@keyframes PullDownCircle {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes RopePullUp {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+.animationStartHandle {
+  animation: PullDownHandle 3s ease-in-out;
+}
+.animationStartCircle {
+  animation: PullDownCircle 3s ease-in-out;
+}
+.RopePullUp{
+  animation: RopePullUp 4s ease-in-out;
+}
 .Hangman {
   width: 400px;
   height: 250px;
@@ -19,7 +65,26 @@
   position: absolute;
   height: 190px;
   width: 12px;
-  background-color: #82602d;
+  background-color: var(--clr-wood);
+}
+.handhold {
+  bottom: 75px;
+  left: -25px;
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  background-color: var(--clr-wood);
+  transform: rotate(35deg);
+}
+
+.handleCircle {
+  bottom: 82px;
+  left: -32px;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: red;
 }
 .pate {
   left: 88px;
@@ -27,7 +92,7 @@
   position: absolute;
   height: 12px;
   width: 125px;
-  background-color: #82602d;
+  background-color: var(--clr-wood);
 }
 .hanging {
   left: 201px;
@@ -35,7 +100,7 @@
   position: absolute;
   width: 5px;
   height: 52px;
-  background-color: #82602d;
+  background-color: var(--clr-wood);
 }
 .head {
   left: 183px;
@@ -82,7 +147,7 @@
   width: 8px;
   height: 40px;
   background-color: black;
-  border-top: 4px solid #82602d;
+  border-top: 4px solid var(--clr-wood);
   z-index: 5;
 }
 .Rhand {
