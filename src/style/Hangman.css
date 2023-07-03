@@ -26,13 +26,26 @@
 
 @keyframes RopePullUp {
   0% {
-    transform: translateY(0px);
+    height: 52px;
   }
   20% {
-    transform: translateY(-50px);
+    transform: translateY(-22px);
+
+    height: 30px;
   }
   100% {
-    transform: translateY(-50px);
+    transform: translateY(-22px);
+    height: 30px;
+  }
+}
+@keyframes RopePullUpBody {
+  0% {
+  }
+  20% {
+    transform: translateY(-22px);
+  }
+  100% {
+    transform: translateY(-22px);
   }
 }
 .animationStartHandle {
@@ -41,9 +54,13 @@
 .animationStartCircle {
   animation: PullDownCircle 3s ease-in-out;
 }
-.RopePullUp{
+.RopePullUp {
   animation: RopePullUp 4s ease-in-out;
 }
+.RopePullUpBody {
+  animation: RopePullUpBody 4s ease-in-out;
+}
+
 .Hangman {
   width: 400px;
   height: 250px;
@@ -159,7 +176,7 @@
   background-color: black;
   transform: rotate(40deg);
 }
-.lhand {
+.Lhand {
   left: 213px;
   bottom: 75px;
   position: absolute;

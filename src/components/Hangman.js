@@ -23,11 +23,15 @@ export default function Hangman() {
       <div className="pate"></div>
       <div
         className={`hanging ${
-          data.wrongAnswersArray.length >= 6 ? "animationStartCircle" : ""
+          data.wrongAnswersArray.length >= 6 ? "RopePullUp" : ""
         }`}
       ></div>
       {data.wrongAnswersArray.length >= 1 && (
-        <div className="head">
+        <div
+          className={`head ${
+            data.wrongAnswersArray.length >= 6 ? "RopePullUpBody" : ""
+          }`}
+        >
           {" "}
           <div
             className={data.wrongAnswersArray.length >= 6 ? "dead" : "eyes"}
@@ -48,11 +52,41 @@ export default function Hangman() {
           <div className="mouth"></div>
         </div>
       )}
-      {data.wrongAnswersArray.length >= 2 && <div className="body"></div>}
-      {data.wrongAnswersArray.length >= 3 && <div className="Rhand"></div>}
-      {data.wrongAnswersArray.length >= 4 && <div className="lhand"></div>}
-      {data.wrongAnswersArray.length >= 5 && <div className="Rfoot"></div>}
-      {data.wrongAnswersArray.length >= 6 && <div className="Lfoot"></div>}
+      {data.wrongAnswersArray.length >= 2 && (
+        <div
+          className={`body ${
+            data.wrongAnswersArray.length >= 6 ? "RopePullUpBody" : ""
+          }`}
+        ></div>
+      )}
+      {data.wrongAnswersArray.length >= 3 && (
+        <div
+          className={`Rhand ${
+            data.wrongAnswersArray.length >= 6 ? "RopePullUpBody" : ""
+          }`}
+        ></div>
+      )}
+      {data.wrongAnswersArray.length >= 4 && (
+        <div
+          className={`Lhand ${
+            data.wrongAnswersArray.length >= 6 ? "RopePullUpBody" : ""
+          }`}
+        ></div>
+      )}
+      {data.wrongAnswersArray.length >= 5 && (
+        <div
+          className={`Rfoot ${
+            data.wrongAnswersArray.length >= 6 ? "RopePullUpBody" : ""
+          }`}
+        ></div>
+      )}
+      {data.wrongAnswersArray.length >= 6 && (
+        <div
+          className={`Lfoot ${
+            data.wrongAnswersArray.length >= 6 ? "RopePullUpBody" : ""
+          }`}
+        ></div>
+      )}
     </div>
   );
 }
