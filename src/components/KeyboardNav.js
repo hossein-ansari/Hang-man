@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useMemo, useState } from "react";
 import { contextBox } from "../context/Context";
 import useClickKeyboard from "../Hooks/useClickKeyboard";
-import "../style/KewyboardNav.css";
+import "../style/KeyboardNav.css";
 export default function KeyboardNav() {
   const data = useContext(contextBox);
   const [clickElement, setClickElement] = useState();

@@ -8,16 +8,21 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import useKeyPress from "./Hooks/useKeyPress";
 import { contextBox } from "./context/Context";
 import LostPopUp from "./components/LostPopUp";
+import WonPopUp from "./components/WonPopUp";
+
 export default function App() {
   const [keyElement, setKeyElement] = useState();
-  const [isLose, setIsLose] = useState(false);
-
   const data = useContext(contextBox);
   useKeyPress(keyElement);
   if (data.wrongAnswersArray.length >= 6) {
     setTimeout(() => {
-      setIsLose(true);
+      data.setIsLose(true);
     }, 2000);
+  }
+  if (data.mainWordArray.length === data.along) {
+    setTimeout(() => {
+      data.setIsWin(true);
+    }, 500);
   }
   return (
     <div
@@ -32,7 +37,7 @@ export default function App() {
       }}
     >
       {/* conditional rendering for pop up  */}
-      {isLose === false ? (
+      {data.isLose === false && data.isWin === false ? (
         <div>
           {" "}
           <div className={"Wronganswer"}>
@@ -46,8 +51,12 @@ export default function App() {
             <KeyboardNav />
           </div>
         </div>
+      ) : data.isWin === true && data.mainWordArray.length !== 0 ? (
+        <div><WonPopUp /></div>
+      ) : data.isLose ? (
+        <div> <LostPopUp /></div>
       ) : (
-        <div>{isLose ? <LostPopUp /> : ""}</div>
+        ""
       )}
     </div>
   );

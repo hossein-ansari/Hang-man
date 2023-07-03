@@ -10,8 +10,11 @@ const AllDatas = ({ children }) => {
     "qwertyuiopasdfghjklzxcvbnm".split("")
   );
   const [wrongAnswersArray, setWrongAnswersArray] = useState([]);
-  const [itemsSelected, setItemsSelected] = useState([]);
-  const [inputCorecctWords, setInputCorecctWords] = useState();
+  // win and lose
+  const [isLose, setIsLose] = useState(false);
+  const [isWin, setIsWin] = useState(false);
+  const [along, setAlong] = useState(0);
+
   // API
   useEffect(() => {
     fetch("https://random-word-api.herokuapp.com/word")
@@ -35,13 +38,15 @@ const AllDatas = ({ children }) => {
         mainWord,
         mainWord,
         wrongAnswersArray,
-        itemsSelected,
-        inputCorecctWords,
         mainWordArray,
-        setInputCorecctWords,
-        setItemsSelected,
+        isLose,
+        isWin,
+        along,
+        setAlong,
         setMainWordArray,
         setWrongAnswersArray,
+        setIsLose,
+        setIsWin,
       }}
     >
       {children}
