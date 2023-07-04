@@ -1,11 +1,13 @@
-.LostPopUpComponent {
+.WonPopUpComponent {
   height: 100vh;
   margin: 0;
-  background-image: url(../image//bangsal-nam-9HMGyZJfrk8-unsplash.jpg);
+  background-image: url(../image/d87804518494deaac47a92c704725e2d.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
 }
-.LostPop-up {
+.WonPop-up {
   width: 400px;
   height: 400px;
   background-color: rgba(183, 0, 0, 0.152);
@@ -16,21 +18,24 @@
   justify-content: space-between;
   flex-direction: column;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.477);
-  border-radius: 10px;
-  background-image: url(../image/blood.png);
   background-size: 500px;
   background-repeat: no-repeat;
+  background-image: url(../image/brain.png);
 }
 
-.lostWord {
+.WonWord {
   font-family: "Courier New", Courier, monospace;
   font-size: 3.5rem;
   color: white;
 }
-.selected-Word {
-  color: white;
+.selectedWord {
+  color: rgb(255, 255, 255);
   text-transform: capitalize;
+  background-color: rgba(0, 0, 0, 0.938);
+  box-shadow: 0 0 7px 0 rgb(0, 0, 0);
+  padding: 10px;
   font-size: 1.5rem;
+  border-radius: 10px;
 }
 .reloadBtn {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -38,12 +43,12 @@
   width: 150px;
   height: 60px;
   border-radius: 7px;
-  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.46);
+  box-shadow: 0 0 7px 0 rgb(0, 0, 0);
   color: white;
-  background-color: rgba(104, 0, 0, 0.273);
+  background-color: rgba(104, 28, 0, 0.273);
   transition: 0.3s;
 }
 .reloadBtn:hover {
-  background-color: rgba(93, 0, 0, 0.495);
+  background-color: rgba(233, 70, 0, 0.495);
   font-size: 1.5rem;
 }

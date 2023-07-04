@@ -7,7 +7,7 @@ export default function LostPopUp() {
     <div className="LostPopUpComponent">
       <div className="LostPop-up">
         <h1 className="lostWord">You Lost</h1>
-        <p className="selectedWord">Selected word: {data.mainWord}</p>
+        <p className="selected-Word">Selected word: {data.mainWord}</p>
         <button className="reloadBtn"
         onClick={() => {
           window.location.reload(false);

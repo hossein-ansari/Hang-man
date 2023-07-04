@@ -25,7 +25,7 @@ export default function App() {
   ) {
     setTimeout(() => {
       data.setIsWin(true);
-    }, 2000);
+    }, 1000);
   }
 
   return (

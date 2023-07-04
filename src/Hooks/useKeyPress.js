@@ -11,14 +11,12 @@ function useKeyPress(key) {
         if (element.Word === key) {
           element.className = "display";
           data.setAlong((prev) => prev + 1);
-          console.log(data.mainWordArray.length);
-          console.log(data.along);
-        } 
+        }
       });
     } else if (key !== undefined && !splitMainWord.includes(`${key}`)) {
       data.setWrongAnswersArray((prev) => [...prev, key]);
     }
-      data.setMainWordArray(newMainWordArray);
+    data.setMainWordArray(newMainWordArray);
   }, [key]);
 }
 export default useKeyPress;
