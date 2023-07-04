@@ -19,7 +19,8 @@ const AllDatas = ({ children }) => {
   useEffect(() => {
     fetch("https://random-word-api.herokuapp.com/word")
       .then((res) => res.json())
-      .then((data) => setMainWord(data[0]));
+      .then((data) => setMainWord(data[0]))
+      .catch(err => alert('please turn on your VPN'))
   }, []);
   // Display the correctly guessed words
   useEffect(() => {
