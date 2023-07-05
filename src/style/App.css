@@ -2,6 +2,7 @@
 .App:focus{
   text-align: center;
   outline: 0px solid transparent;
+  
 }
 
 .Wronganswer {
