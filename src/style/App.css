@@ -1,8 +1,7 @@
 .App,
-.App:focus{
+.App:focus {
   text-align: center;
   outline: 0px solid transparent;
-  
 }
 
 .Wronganswer {
@@ -20,5 +19,8 @@
   border: none;
   align-items: center;
 }
-
-
+.hint{
+  position: absolute;
+  left: 25vw;
+  top: 10vh;
+}

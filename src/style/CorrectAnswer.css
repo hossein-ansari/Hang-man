@@ -11,10 +11,11 @@ padding: 1rem 0;
     width: 50px;
     height: 55px;
     border: none;
-    background-color: #ffffff;
-    border-bottom: 5px solid black;
+    background-color: #ffffff00;
+    border-bottom: 5px solid rgb(0, 0, 0);
     margin: 10px 5px;
-
+    align-items: center;
+    color: rgb(0, 0, 0);
 }
 .inputAnswer:focus {
 
