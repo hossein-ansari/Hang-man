@@ -9,7 +9,6 @@ import useKeyPress from "./Hooks/useKeyPress";
 import { contextBox } from "./context/Context";
 import LostPopUp from "./components/LostPopUp";
 import WonPopUp from "./components/WonPopUp";
-import Hint from "./components/Hint";
 
 export default function App() {
   const [keyElement, setKeyElement] = useState();
@@ -54,9 +53,6 @@ export default function App() {
           <div className="keyboard">
             <CorrectAnswer />
             <KeyboardNav />
-          </div>
-          <div className="hint">
-            <Hint></Hint>
           </div>
         </div>
       ) : data.isWin ? (
