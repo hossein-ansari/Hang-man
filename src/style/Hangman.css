@@ -267,3 +267,6 @@
   height: 9px;
   transform: rotate(45deg);
 }
+@media only screen and (max-width: 500px) {
+  
+}

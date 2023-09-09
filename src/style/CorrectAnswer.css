@@ -40,3 +40,13 @@ padding: 1rem 0;
     opacity: 100%;
 
 }
+@media only screen and (max-width: 500px) {
+    .CorrectBox{
+        width: 70%;
+        }
+    .inputAnswer{
+        font-size: 1.5rem;
+        width: 40px;
+        height: 45px;
+    }
+}
