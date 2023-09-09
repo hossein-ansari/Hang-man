@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Hang-man/static/css/main.81890a46.css",
+    "main.js": "/Hang-man/static/js/main.656b6027.js",
+    "static/media/bangsal-nam-9HMGyZJfrk8-unsplash.jpg": "/Hang-man/static/media/bangsal-nam-9HMGyZJfrk8-unsplash.0a996e9c7d95497bb1a7.jpg",
+    "static/media/brain.png": "/Hang-man/static/media/brain.4819d6f55a335e2b372c.png",
+    "static/media/blood.png": "/Hang-man/static/media/blood.f3be917b8ff1da2af016.png",
+    "static/media/jpg": "/Hang-man/static/media/d87804518494deaac47a92c704725e2d.557e2a01888abe809d9d.jpg",
+    "index.html": "/Hang-man/index.html",
+    "main.81890a46.css.map": "/Hang-man/static/css/main.81890a46.css.map",
+    "main.656b6027.js.map": "/Hang-man/static/js/main.656b6027.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81890a46.css",
+    "static/js/main.656b6027.js"
+  ]
+}
